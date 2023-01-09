@@ -1,17 +1,18 @@
 {
-  "name": "@cseitz/grafana",
+  "name": "grafana",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "workspaces": [
+    "projects/*",
     "docker"
   ],
   "scripts": {
     "dev": "cross-env FORCE_COLOR=1 turbo run dev --parallel",
-    "start": "cross-env FORCE_COLOR=1 turbo run start --parallel --filter=!./projects/plugin",
+    "start": "cross-env FORCE_COLOR=1 turbo run start --parallel",
     "build": "cross-env FORCE_COLOR=1 turbo run build --parallel"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
