@@ -1,0 +1,7 @@
+{
+    "name": "docker",
+    "scripts": {
+        "build": "docker-compose -f ./docker/compose.yml -p grafana build",
+        "start": "docker-compose -f ./docker/compose.yml -p grafana up"
+    }
+}

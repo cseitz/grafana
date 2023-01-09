@@ -1,0 +1,27 @@
+{
+  "name": "@cseitz/grafana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "docker"
+  ],
+  "scripts": {
+    "dev": "cross-env FORCE_COLOR=1 turbo run dev --parallel",
+    "start": "cross-env FORCE_COLOR=1 turbo run start --parallel --filter=!./projects/plugin",
+    "build": "cross-env FORCE_COLOR=1 turbo run build --parallel"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "turbo": "latest"
+  },
+  "packageManager": "npm@8.19.3",
+  "engines": {
+    "npm": ">=7.0.0",
+    "turbo": ">=14.0.0"
+  }
+}
